@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import * as React from 'react';
 import { ChunkExtractor } from '@loadable/server';
+import React from 'react';
 import path from 'path';
 
 export default class AppDocument extends Document {
@@ -18,7 +18,7 @@ export default class AppDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </Html>
+      </Html>,
     );
   }
 }

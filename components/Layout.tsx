@@ -16,15 +16,15 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     </Head>
     <header>
       <nav>
-        <Link href="/">
+        <Link href="/" prefetch={false}>
           <a>Home</a>
         </Link>{' '}
         |{' '}
-        <Link href="/about">
+        <Link href="/about" prefetch={false}>
           <a>About</a>
         </Link>{' '}
         |{' '}
-        <Link href="/users">
+        <Link href="/users" prefetch={false}>
           <a>Users List</a>
         </Link>{' '}
         | <a href="/api/users">Users API</a>
